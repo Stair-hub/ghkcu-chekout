@@ -35,21 +35,15 @@ gsap.ticker.lagSmoothing(0, 0);
 
 // Initialize Swiper
 new Swiper('.testimonials-swiper', {
-  modules: [Autoplay, Pagination],
-  slidesPerView: 1,
-  spaceBetween: 30,
+  modules: [Autoplay],
+  slidesPerView: 'auto',
+  spaceBetween: 80,
   loop: true,
+  speed: 6000,
+  allowTouchMove: false,
   autoplay: {
-    delay: 4000,
+    delay: 0,
     disableOnInteraction: false,
-  },
-  breakpoints: {
-    768: {
-      slidesPerView: 2,
-    },
-    1024: {
-      slidesPerView: 3,
-    },
   },
 });
 
