@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap');
+
+:root {
+  /* Colors */
+  --color-white: #ffffff;
+  --color-glacier: #E8F4F8;
+  --color-glacier-deep: #A9D6E5;
+  --color-copper: #C28269;
+  --color-copper-light: #E0B4A4;
+  --color-silver: #DCDCDC;
+  --color-dark: #1A1A1A;
+  --color-gray: #4A4A4A;
+  --color-bg: #FFFFFF;
+  
+  /* Typography */
+  --font-sans: 'Inter', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+  
+  /* Spacing */
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  --space-xl: 8rem;
+  
+  /* Transitions */
+  --transition-smooth: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  background-color: var(--color-bg);
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-dark);
+  line-height: 1.6;
+  overflow-x: hidden;
+  background-color: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Lenis smooth scroll */
+html.lenis, html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+/* Typography Utilities */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.title-xl {
+  font-size: clamp(3rem, 8vw, 6rem);
+  letter-spacing: -0.02em;
+}
+
+.title-lg {
+  font-size: clamp(2rem, 5vw, 4rem);
+  letter-spacing: -0.01em;
+}
+
+.title-md {
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.text-body {
+  font-size: clamp(1rem, 1.2vw, 1.25rem);
+  color: var(--color-gray);
+  max-width: 600px;
+}
+
+/* Layout Utilities */
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+section {
+  position: relative;
+  padding: var(--space-xl) 0;
+}
+
+/* UI Elements */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  border: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary {
+  background: var(--color-copper);
+  color: var(--color-white);
+  box-shadow: 0 10px 30px rgba(194, 130, 105, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 40px rgba(194, 130, 105, 0.4);
+  background: #b3735a;
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--color-dark);
+  border: 1px solid var(--color-silver);
+}
+
+.btn-outline:hover {
+  border-color: var(--color-copper);
+  color: var(--color-copper);
+}
+
+/* Glassmorphism */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+  border-radius: 24px;
+}
+
+/* Animations */
+.reveal-text {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.reveal-text > * {
+  transform: translateY(100%);
+  opacity: 0;
+}

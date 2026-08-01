@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sérum GHK-Cu | L'Innovation Anti-Âge Premium</title>
+  <meta name="description" content="Découvrez le sérum GHK-Cu, le soin premium pour une peau visiblement plus lisse, plus ferme et plus lumineuse. Technologie avancée au service de votre éclat." />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+  
+  <div id="canvas-container" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: -1; pointer-events: none;"></div>
+
+  <!-- Header -->
+  <header style="position: fixed; top: 0; width: 100%; z-index: 100; padding: 1.5rem 0; background: rgba(255,255,255,0.8); backdrop-filter: blur(10px); transition: all 0.3s;" id="main-header">
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+      <div style="font-family: var(--font-serif); font-size: 1.5rem; font-weight: 600; color: var(--color-copper);">AURA VITALITÉ</div>
+      <a href="checkout.html" class="btn btn-primary" style="padding: 0.75rem 2rem;">Acheter maintenant</a>
+    </div>
+  </header>
+
+  <!-- 1. Hero Section -->
+  <section id="hero" style="min-height: 100vh; display: flex; align-items: center; justify-content: center; position: relative; padding-top: 5rem;">
+    <div class="container" style="display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 4rem;">
+      <div class="hero-content">
+        <h1 class="title-xl" style="margin-bottom: 1.5rem;">
+          <div class="reveal-text"><span>L'Élixir de</span></div>
+          <div class="reveal-text"><span style="color: var(--color-copper);">Jeunesse Absolue.</span></div>
+        </h1>
+        <p class="text-body" style="margin-bottom: 2.5rem; font-size: 1.25rem;">
+          Un sérum infusé au complexe peptidique GHK-Cu, conçu pour régénérer l'éclat originel de votre peau. Découvrez l'alliance parfaite entre science de pointe et luxe absolu.
+        </p>
+        <div style="display: flex; gap: 1.5rem; align-items: center;">
+          <a href="checkout.html" class="btn btn-primary" style="font-size: 1.1rem; padding: 1.25rem 3rem;">Révéler ma peau</a>
+          <span style="font-size: 0.9rem; color: var(--color-gray);">Résultats visibles dès 14 jours</span>
+        </div>
+      </div>
+      <div class="hero-image-wrapper" style="position: relative; height: 80vh; display: flex; justify-content: center; align-items: center; perspective: 1000px;">
+        <!-- Glowing Halo -->
+        <div class="halo" style="position: absolute; width: 400px; height: 400px; background: radial-gradient(circle, rgba(194, 130, 105, 0.4) 0%, rgba(255,255,255,0) 70%); border-radius: 50%; z-index: 0; filter: blur(40px);"></div>
+        <!-- Product Image -->
+        <img src="/bottle.png" alt="Sérum GHK-Cu" id="hero-bottle" style="max-height: 90%; z-index: 1; filter: drop-shadow(0 30px 40px rgba(0,0,0,0.15));" />
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. The Problem -->
+  <section id="problem" style="background-color: var(--color-glacier); padding: 8rem 0;">
+    <div class="container" style="text-align: center;">
+      <h2 class="title-lg" style="margin-bottom: 2rem;">Le temps laisse son empreinte.</h2>
+      <p class="text-body" style="margin: 0 auto 4rem auto; font-size: 1.2rem;">
+        Avec le temps, la production naturelle de collagène diminue. La peau perd de sa fermeté, le teint devient terne et les signes de fatigue s'installent. Votre peau a besoin d'un nouveau souffle.
+      </p>
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
+        <div class="glass-panel" style="padding: 3rem 2rem;">
+          <div style="font-size: 2.5rem; color: var(--color-copper); margin-bottom: 1rem;">01</div>
+          <h3 style="font-size: 1.25rem; margin-bottom: 1rem;">Perte de fermeté</h3>
+          <p style="color: var(--color-gray);">Les contours se relâchent, la peau perd son rebond naturel.</p>
+        </div>
+        <div class="glass-panel" style="padding: 3rem 2rem;">
+          <div style="font-size: 2.5rem; color: var(--color-copper); margin-bottom: 1rem;">02</div>
+          <h3 style="font-size: 1.25rem; margin-bottom: 1rem;">Teint terne</h3>
+          <p style="color: var(--color-gray);">La luminosité s'estompe, laissant place à un teint moins uniforme.</p>
+        </div>
+        <div class="glass-panel" style="padding: 3rem 2rem;">
+          <div style="font-size: 2.5rem; color: var(--color-copper); margin-bottom: 1rem;">03</div>
+          <h3 style="font-size: 1.25rem; margin-bottom: 1rem;">Déshydratation</h3>
+          <p style="color: var(--color-gray);">La barrière cutanée s'affaiblit, la peau devient sèche et inconfortable.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. The Solution (GHK-Cu) -->
+  <section id="solution" style="padding: 10rem 0; overflow: hidden; position: relative;">
+    <div class="container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: center;">
+      <div class="solution-image" style="position: relative; border-radius: 30px; overflow: hidden;">
+        <img src="/skin.png" alt="Peau hydratée et lumineuse" style="width: 100%; height: auto; display: block;" />
+      </div>
+      <div class="solution-content">
+        <div style="color: var(--color-copper); font-weight: 600; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 1rem;">Le secret</div>
+        <h2 class="title-lg" style="margin-bottom: 2rem;">La puissance du peptide GHK-Cu.</h2>
+        <p class="text-body" style="margin-bottom: 1.5rem;">
+          Naturellement présent dans notre organisme, ce complexe de cuivre est un véritable messager de la jeunesse. En cosmétique, il est reconnu pour son incroyable capacité à aider à l'amélioration de l'apparence de la peau.
+        </p>
+        <p class="text-body" style="margin-bottom: 3rem;">
+          Notre formule hautement concentrée pénètre en profondeur pour participer au maintien de l'hydratation et favoriser une peau d'apparence visiblement plus jeune et ferme.
+        </p>
+        <a href="checkout.html" class="btn btn-primary">Découvrir le sérum</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Benefits -->
+  <section id="benefits" style="background-color: var(--color-dark); color: var(--color-white); padding: 10rem 0;">
+    <div class="container">
+      <h2 class="title-lg" style="text-align: center; margin-bottom: 6rem; color: var(--color-white);">Une transformation visible.</h2>
+      
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; margin-bottom: 6rem;">
+        <div>
+          <h3 style="font-size: 2rem; margin-bottom: 1rem; color: var(--color-copper-light);">Lissage absolu</h3>
+          <p style="font-size: 1.1rem; color: #aaa; max-width: 400px;">Aide à lisser l'apparence des ridules. Votre grain de peau semble affiné, d'une douceur exceptionnelle.</p>
+        </div>
+        <div style="height: 1px; background: rgba(255,255,255,0.2);"></div>
+      </div>
+      
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; margin-bottom: 6rem;">
+        <div style="height: 1px; background: rgba(255,255,255,0.2);"></div>
+        <div>
+          <h3 style="font-size: 2rem; margin-bottom: 1rem; color: var(--color-copper-light);">Hydratation profonde</h3>
+          <p style="font-size: 1.1rem; color: #aaa; max-width: 400px;">Gorge votre peau d'hydratation. Elle retrouve son rebond et sa fraîcheur naturelle instantanément.</p>
+        </div>
+      </div>
+      
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+        <div>
+          <h3 style="font-size: 2rem; margin-bottom: 1rem; color: var(--color-copper-light);">Éclat originel</h3>
+          <p style="font-size: 1.1rem; color: #aaa; max-width: 400px;">Ravive la luminosité de votre teint. Contribue à une peau visiblement plus lumineuse et unifiée.</p>
+        </div>
+        <div style="height: 1px; background: rgba(255,255,255,0.2);"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Testimonials Carousel -->
+  <section id="testimonials" style="padding: 8rem 0; overflow: hidden; background: linear-gradient(180deg, var(--color-white) 0%, var(--color-glacier) 100%);">
+    <div class="container">
+      <h2 class="title-lg" style="text-align: center; margin-bottom: 4rem;">Elles ont retrouvé leur éclat.</h2>
+      
+      <div class="swiper testimonials-swiper" style="overflow: visible;">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide">
+            <div class="glass-panel" style="padding: 3rem; height: 100%;">
+              <div style="color: var(--color-copper); font-size: 1.5rem; margin-bottom: 1.5rem;">★★★★★</div>
+              <p style="font-size: 1.1rem; font-style: italic; margin-bottom: 2rem;">"C'est la première fois qu'un sérum me donne cet effet 'peau de verre'. Ma peau est incroyablement lisse et lumineuse. Je ne peux plus m'en passer."</p>
+              <div style="font-weight: 600;">Sophie D.</div>
+              <div style="font-size: 0.9rem; color: var(--color-gray);">42 ans</div>
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="swiper-slide">
+            <div class="glass-panel" style="padding: 3rem; height: 100%;">
+              <div style="color: var(--color-copper); font-size: 1.5rem; margin-bottom: 1.5rem;">★★★★★</div>
+              <p style="font-size: 1.1rem; font-style: italic; margin-bottom: 2rem;">"Une texture merveilleuse, qui fond sur la peau. Après 3 semaines, mon entourage me demande quel est mon secret pour avoir si bonne mine !"</p>
+              <div style="font-weight: 600;">Claire M.</div>
+              <div style="font-size: 0.9rem; color: var(--color-gray);">38 ans</div>
+            </div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="swiper-slide">
+            <div class="glass-panel" style="padding: 3rem; height: 100%;">
+              <div style="color: var(--color-copper); font-size: 1.5rem; margin-bottom: 1.5rem;">★★★★★</div>
+              <p style="font-size: 1.1rem; font-style: italic; margin-bottom: 2rem;">"Un véritable luxe en flacon. Ma peau semble beaucoup plus ferme et les petites zones de sécheresse ont complètement disparu."</p>
+              <div style="font-weight: 600;">Isabelle T.</div>
+              <div style="font-size: 0.9rem; color: var(--color-gray);">51 ans</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section id="cta" style="padding: 12rem 0; text-align: center; position: relative;">
+    <div class="container">
+      <h2 class="title-xl" style="margin-bottom: 2rem;">Votre renaissance commence ici.</h2>
+      <p class="text-body" style="margin: 0 auto 3rem auto; font-size: 1.25rem;">
+        Rejoignez les femmes qui ont fait le choix de l'excellence scientifique pour leur peau. Sécurisez votre sérum GHK-Cu dès aujourd'hui.
+      </p>
+      <a href="checkout.html" class="btn btn-primary" style="font-size: 1.2rem; padding: 1.5rem 4rem;">Commander maintenant</a>
+      <div style="margin-top: 2rem; display: flex; justify-content: center; gap: 2rem; color: var(--color-gray); font-size: 0.9rem;">
+        <span>✓ Paiement 100% Sécurisé</span>
+        <span>✓ Livraison Express</span>
+        <span>✓ Qualité Premium</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer style="background-color: var(--color-dark); color: white; padding: 4rem 0; text-align: center;">
+    <div class="container">
+      <div style="font-family: var(--font-serif); font-size: 1.5rem; font-weight: 600; color: var(--color-copper); margin-bottom: 2rem;">AURA VITALITÉ</div>
+      <p style="color: #888; font-size: 0.9rem; max-width: 600px; margin: 0 auto 2rem auto;">
+        *Ce produit est un cosmétique et ne prétend pas traiter, guérir ou prévenir une quelconque maladie. Les résultats peuvent varier d'une personne à l'autre.
+      </p>
+      <div style="color: #555; font-size: 0.8rem;">
+        &copy; 2026 Aura Vitalité. Tous droits réservés.
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "ghkcu-premium",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/three": "^0.185.3",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0"
+  },
+  "dependencies": {
+    "@studio-freight/lenis": "^1.0.42",
+    "gsap": "^3.12.5",
+    "lenis": "^1.3.25",
+    "swiper": "^11.1.3",
+    "three": "^0.164.0"
+  }
+}
