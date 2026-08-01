@@ -3,8 +3,8 @@
 :root {
   /* Colors */
   --color-white: #ffffff;
-  --color-glacier: #E8F4F8;
-  --color-glacier-deep: #A9D6E5;
+  --color-midnight: #0B1026;
+  --color-midnight-deep: #050814;
   --color-indigo: #4338CA;
   --color-indigo-light: #818CF8;
   --color-silver: #DCDCDC;
@@ -164,3 +164,49 @@ section {
   transform: translateY(100%);
   opacity: 0;
 }
+
+.starry-bg {
+  position: relative;
+  background-color: var(--color-midnight) !important;
+  color: var(--color-white) !important;
+}
+.starry-bg::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: 
+    radial-gradient(1.5px 1.5px at 20px 30px, #ffffff, rgba(0,0,0,0)),
+    radial-gradient(1px 1px at 40px 70px, #ffffff, rgba(0,0,0,0)),
+    radial-gradient(1px 1px at 50px 160px, #ffffff, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 90px 40px, #ffffff, rgba(0,0,0,0)),
+    radial-gradient(1px 1px at 130px 80px, #ffffff, rgba(0,0,0,0)),
+    radial-gradient(1.5px 1.5px at 160px 120px, #ffffff, rgba(0,0,0,0));
+  background-repeat: repeat;
+  background-size: 200px 200px;
+  z-index: 0;
+  animation: twinkle 4s infinite alternate;
+  pointer-events: none;
+}
+.starry-bg > * {
+  position: relative;
+  z-index: 1;
+}
+.starry-bg .glass-panel {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.1);
+  color: var(--color-white);
+}
+.starry-bg h2, .starry-bg h3 {
+  color: var(--color-white) !important;
+}
+.starry-bg p, .starry-bg .text-body, .starry-bg div {
+  color: #ccc;
+}
+.starry-bg .glass-panel div {
+  color: var(--color-white);
+}
+@keyframes twinkle {
+  0% { opacity: 0.3; }
+  100% { opacity: 1; }
+}
+
