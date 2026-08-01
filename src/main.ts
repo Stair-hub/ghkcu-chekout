@@ -148,7 +148,7 @@ const initThreeJS = () => {
   // Custom Material for soft glowing particles
   const material = new THREE.PointsMaterial({
     size: 0.05,
-    color: 0xC28269,
+    color: 0x4338CA,
     transparent: true,
     opacity: 0.6,
     blending: THREE.AdditiveBlending

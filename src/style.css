@@ -5,8 +5,8 @@
   --color-white: #ffffff;
   --color-glacier: #E8F4F8;
   --color-glacier-deep: #A9D6E5;
-  --color-copper: #C28269;
-  --color-copper-light: #E0B4A4;
+  --color-indigo: #4338CA;
+  --color-indigo-light: #818CF8;
   --color-silver: #DCDCDC;
   --color-dark: #1A1A1A;
   --color-gray: #4A4A4A;
@@ -123,15 +123,15 @@ section {
 }
 
 .btn-primary {
-  background: var(--color-copper);
+  background: var(--color-indigo);
   color: var(--color-white);
-  box-shadow: 0 10px 30px rgba(194, 130, 105, 0.3);
+  box-shadow: 0 10px 30px rgba(67, 56, 202, 0.3);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 15px 40px rgba(194, 130, 105, 0.4);
-  background: #b3735a;
+  box-shadow: 0 15px 40px rgba(67, 56, 202, 0.4);
+  background: #3730a3;
 }
 
 .btn-outline {
@@ -141,8 +141,8 @@ section {
 }
 
 .btn-outline:hover {
-  border-color: var(--color-copper);
-  color: var(--color-copper);
+  border-color: var(--color-indigo);
+  color: var(--color-indigo);
 }
 
 /* Glassmorphism */
