@@ -49,10 +49,6 @@ export default function Checkout() {
               « Formule hautement concentrée en peptides de cuivre GHK-Cu [1]. Stimule la production de collagène et d'élastine, réduit visiblement les rides et raffermit l'ovale du visage. Texture légère à absorption rapide pour une régénération cellulaire intense. »
             </p>
 
-            <div className="mt-8 flex justify-between items-center py-6 border-y border-slate-200">
-              <span className="text-slate-500 font-medium">Total à régler</span>
-              <span className="text-3xl font-semibold text-brand-midnight">120,00 €</span>
-            </div>
           </div>
         </div>
 
@@ -151,6 +147,11 @@ export default function Checkout() {
                   </button>
                 </div>
               )}
+            </div>
+
+            <div className="mt-8 mb-6 flex justify-between items-center py-4 border-t border-slate-200">
+              <span className="text-slate-500 font-medium">Total à régler</span>
+              <span className="text-3xl font-semibold text-brand-midnight">120,00 €</span>
             </div>
 
             <button 
