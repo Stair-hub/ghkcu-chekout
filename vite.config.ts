@@ -1,13 +1,12 @@
 import { defineConfig } from 'vite';
-import { resolve } from 'path';
 
 export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        main: resolve(__dirname, 'index.html'),
-        checkout: resolve(__dirname, 'checkout.html'),
-        cerd: resolve(__dirname, 'cerd.html')
+        main: 'index.html',
+        checkout: 'checkout.html',
+        cerd: 'cerd.html'
       }
     }
   }
