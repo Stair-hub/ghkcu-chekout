@@ -6,6 +6,28 @@
   <title>Sérum GHK-Cu | L'Innovation Anti-Âge Premium</title>
   <meta name="description" content="Découvrez le sérum GHK-Cu, le soin premium pour une peau visiblement plus lisse, plus ferme et plus lumineuse. Technologie avancée au service de votre éclat." />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <style>
+    @keyframes blink-glow {
+      0%, 100% { opacity: 1; text-shadow: 0 0 10px rgba(67,56,202,0.8), 0 0 20px rgba(67,56,202,0.5); }
+      50% { opacity: 0.2; text-shadow: none; }
+    }
+    .serum-blink {
+      animation: blink-glow 1.4s ease-in-out infinite;
+      font-family: var(--font-serif);
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--color-indigo);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      text-align: center;
+      margin-top: 0.75rem;
+    }
+    @keyframes bottle-float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+    .bottle-float-anim { animation: bottle-float 3s ease-in-out infinite; }
+  </style>
 </head>
 <body>
   
@@ -24,7 +46,7 @@
 
   <!-- 1. Hero Section -->
   <section id="hero" style="min-height: 100vh; display: flex; align-items: center; justify-content: center; position: relative; padding-top: 5rem;">
-    <div class="container" style="display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 4rem;">
+    <div class="container" style="display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 2rem;">
       <div class="hero-content">
         <h1 class="title-xl" style="margin-bottom: 1.5rem;">
           <div class="reveal-text"><span>L'Élixir de</span></div>
@@ -38,6 +60,15 @@
           <span style="font-size: 0.9rem; color: var(--color-gray);">Résultats visibles dès 14 jours</span>
         </div>
       </div>
+
+      <!-- Centre : bouteille + texte clignotant -->
+      <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+        <div class="bottle-float-anim" style="background: rgba(255,255,255,0.6); backdrop-filter: blur(12px); border-radius: 24px; box-shadow: 0 20px 60px rgba(67,56,202,0.2), 0 0 0 1px rgba(67,56,202,0.1); padding: 2rem 1.5rem; display: flex; flex-direction: column; align-items: center;">
+          <img src="/ghkfoto.png" alt="Sérum GHK-Cu" style="height: 180px; width: auto; object-fit: contain; filter: drop-shadow(0 10px 20px rgba(67,56,202,0.25));" />
+          <p class="serum-blink">Votre Sérum de Jouvence</p>
+        </div>
+      </div>
+
       <div class="hero-image-wrapper" style="position: relative; height: 80vh; display: flex; justify-content: center; align-items: center; perspective: 1000px;">
         <!-- Glowing Halo -->
         <div class="halo" style="position: absolute; width: 400px; height: 400px; background: radial-gradient(circle, rgba(67, 56, 202, 0.4) 0%, rgba(255,255,255,0) 70%); border-radius: 50%; z-index: 0; filter: blur(40px);"></div>
