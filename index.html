@@ -14,8 +14,12 @@
   <!-- Header -->
   <header style="position: fixed; top: 0; width: 100%; z-index: 100; padding: 1.5rem 0; background: rgba(255,255,255,0.8); backdrop-filter: blur(10px); transition: all 0.3s;" id="main-header">
     <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
-      <div style="font-family: var(--font-serif); font-size: 1.5rem; font-weight: 600; color: var(--color-indigo);">AURA VITALITÉ</div>
-      <a href="checkout.html" class="btn btn-primary" style="padding: 0.75rem 2rem;">Acheter maintenant</a>
+      <a href="/index.html" style="font-family: var(--font-serif); font-size: 1.5rem; font-weight: 600; color: var(--color-indigo); text-decoration: none;">AURA VITALITÉ</a>
+      <nav style="display: flex; gap: 2rem; align-items: center;">
+        <a href="/index.html" style="color: var(--color-midnight); text-decoration: none; font-weight: 500; border-bottom: 2px solid var(--color-indigo);">Accueil</a>
+        <a href="/cerd.html" style="color: var(--color-gray); text-decoration: none; font-weight: 500; transition: color 0.3s;" onmouseover="this.style.color='var(--color-indigo)'" onmouseout="this.style.color='var(--color-gray)'">Galerie</a>
+        <a href="/checkout.html" class="btn btn-primary" style="padding: 0.75rem 2rem;">Panier</a>
+      </nav>
     </div>
   </header>
 

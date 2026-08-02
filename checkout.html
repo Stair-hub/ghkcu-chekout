@@ -84,8 +84,13 @@
 </head>
 <body class="starry-bg">
 
-  <header style="padding: 1.5rem 0; text-align: center; border-bottom: 1px solid rgba(0,0,0,0.05); background: white;">
-    <a href="/" style="font-family: var(--font-serif); font-size: 1.5rem; font-weight: 600; color: var(--color-indigo); text-decoration: none;">AURA VITALITÉ</a>
+  <header style="padding: 1.5rem 2rem; border-bottom: 1px solid rgba(0,0,0,0.05); background: white; display: flex; justify-content: space-between; align-items: center;">
+    <a href="/index.html" style="font-family: var(--font-serif); font-size: 1.5rem; font-weight: 600; color: var(--color-indigo); text-decoration: none;">AURA VITALITÉ</a>
+    <nav style="display: flex; gap: 2rem; align-items: center;">
+      <a href="/index.html" style="color: var(--color-gray); text-decoration: none; font-weight: 500; transition: color 0.3s;" onmouseover="this.style.color='var(--color-indigo)'" onmouseout="this.style.color='var(--color-gray)'">Accueil</a>
+      <a href="/cerd.html" style="color: var(--color-gray); text-decoration: none; font-weight: 500; transition: color 0.3s;" onmouseover="this.style.color='var(--color-indigo)'" onmouseout="this.style.color='var(--color-gray)'">Galerie</a>
+      <a href="/checkout.html" class="btn btn-primary" style="padding: 0.75rem 2rem;">Panier</a>
+    </nav>
   </header>
 
   <div class="container">
