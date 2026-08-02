@@ -142,6 +142,13 @@ export default function Checkout() {
                     <span className="text-slate-400 text-sm font-medium">Faux QR Code</span>
                   </div>
                   <p className="text-slate-500 text-center text-sm max-w-[250px]">Flashez le QR code ou connectez votre wallet Web3 pour payer via Coinbase Commerce.</p>
+                  
+                  <div className="w-full max-w-sm space-y-2">
+                    <label className="text-sm font-medium text-slate-600">Votre clé publique (pour vérification)</label>
+                    <input type="text" placeholder="ex: 0x123...abc" className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-brand-copper focus:ring-1 focus:ring-brand-copper outline-none transition-shadow font-mono text-sm" />
+                    <p className="text-xs text-brand-copper font-medium mt-1">⚠️ N'oubliez pas de nous envoyer le scan du paiement crypto.</p>
+                  </div>
+
                   <button type="button" className="w-full max-w-sm bg-slate-900 hover:bg-slate-800 text-white font-medium py-4 rounded-xl transition-colors shadow-lg">
                     Connecter le Wallet
                   </button>
