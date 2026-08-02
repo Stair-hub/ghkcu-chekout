@@ -39,7 +39,7 @@
       <a href="/index.html" style="font-family: var(--font-serif); font-size: 1.5rem; font-weight: 600; color: var(--color-indigo); text-decoration: none;">AURA VITALITÉ</a>
       <nav style="display: flex; gap: 2rem; align-items: center;">
         <a href="/index.html" style="color: var(--color-midnight); text-decoration: none; font-weight: 500; border-bottom: 2px solid var(--color-indigo);">Accueil</a>
-        <a href="/checkout.html" class="btn btn-primary" style="padding: 0.75rem 2rem;">Panier <img src="/ghkfoto.png" alt="" style="height: 1.2em; width: auto; object-fit: contain;"></a>
+        <a href="/checkout.html" class="btn btn-primary">Panier <img src="/ghkfoto.webp" alt="" style="height: 1.2em; width: auto; object-fit: contain;"></a>
       </nav>
     </div>
   </header>
@@ -56,7 +56,7 @@
           Un sérum infusé au complexe peptidique GHK-Cu, conçu pour régénérer l'éclat originel de votre peau. Découvrez l'alliance parfaite entre science de pointe et luxe absolu.
         </p>
         <div style="display: flex; gap: 1.5rem; align-items: center;">
-          <a href="checkout.html" class="btn btn-primary" style="font-size: 1.1rem; padding: 1.25rem 3rem;">Révéler ma peau <img src="/ghkfoto.png" alt="" style="height: 1.2em; width: auto; object-fit: contain;"></a>
+          <a href="checkout.html" class="btn btn-primary">Révéler ma peau <img src="/ghkfoto.webp" alt="" style="height: 1.2em; width: auto; object-fit: contain;"></a>
           <span style="font-size: 0.9rem; color: var(--color-gray);">Résultats visibles dès 14 jours</span>
         </div>
       </div>
@@ -64,7 +64,7 @@
       <!-- Centre : bouteille + texte clignotant -->
       <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
         <div class="bottle-float-anim" style="background: rgba(255,255,255,0.6); backdrop-filter: blur(12px); border-radius: 24px; box-shadow: 0 20px 60px rgba(67,56,202,0.2), 0 0 0 1px rgba(67,56,202,0.1); padding: 2rem 1.5rem; display: flex; flex-direction: column; align-items: center;">
-          <img src="/ghkfoto.png" alt="Sérum GHK-Cu" style="height: 180px; width: auto; object-fit: contain; filter: drop-shadow(0 10px 20px rgba(67,56,202,0.25));" />
+          <img src="/ghkfoto.webp" alt="Sérum GHK-Cu" style="height: 180px; width: auto; object-fit: contain; filter: drop-shadow(0 10px 20px rgba(67,56,202,0.25));" />
           <p class="serum-blink">Votre Sérum de Jouvence</p>
         </div>
       </div>
@@ -80,26 +80,33 @@
 
   <!-- 2. The Problem -->
   <section id="problem" class="starry-bg" style="padding: 8rem 0;">
-    <div class="container" style="text-align: center;">
-      <h2 class="title-lg" style="margin-bottom: 2rem;">Le temps laisse son empreinte.</h2>
-      <p class="text-body" style="margin: 0 auto 4rem auto; font-size: 1.2rem;">
-        Avec le temps, la production naturelle de collagène diminue. La peau perd de sa fermeté, le teint devient terne et les signes de fatigue s'installent. Votre peau a besoin d'un nouveau souffle.
-      </p>
-      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
-        <div class="glass-panel" style="padding: 3rem 2rem;">
-          <div style="font-size: 2.5rem; color: var(--color-indigo); margin-bottom: 1rem;">01</div>
-          <h3 style="font-size: 1.25rem; margin-bottom: 1rem;">Perte de fermeté</h3>
-          <p style="color: var(--color-gray);">Les contours se relâchent, la peau perd son rebond naturel.</p>
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+        <div>
+          <img src="/rides.webp" alt="Problèmes de peau" style="width: 100%; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.3);" />
         </div>
-        <div class="glass-panel" style="padding: 3rem 2rem;">
-          <div style="font-size: 2.5rem; color: var(--color-indigo); margin-bottom: 1rem;">02</div>
-          <h3 style="font-size: 1.25rem; margin-bottom: 1rem;">Teint terne</h3>
-          <p style="color: var(--color-gray);">La luminosité s'estompe, laissant place à un teint moins uniforme.</p>
-        </div>
-        <div class="glass-panel" style="padding: 3rem 2rem;">
-          <div style="font-size: 2.5rem; color: var(--color-indigo); margin-bottom: 1rem;">03</div>
-          <h3 style="font-size: 1.25rem; margin-bottom: 1rem;">Déshydratation</h3>
-          <p style="color: var(--color-gray);">La barrière cutanée s'affaiblit, la peau devient sèche et inconfortable.</p>
+        <div>
+          <h2 class="title-lg" style="margin-bottom: 2rem; text-align: left;">Le temps laisse son empreinte.</h2>
+          <p class="text-body" style="margin-bottom: 3rem; font-size: 1.2rem;">
+            Avec le temps, la production naturelle de collagène diminue. La peau perd de sa fermeté, le teint devient terne et les signes de fatigue s'installent. Votre peau a besoin d'un nouveau souffle.
+          </p>
+          <div style="display: flex; flex-direction: column; gap: 2.5rem;">
+            <div>
+              <div style="font-size: 2rem; color: var(--color-indigo); margin-bottom: 0.5rem; font-weight: bold;">01</div>
+              <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Perte de fermeté</h3>
+              <p style="color: var(--color-gray);">Les contours se relâchent, la peau perd son rebond naturel.</p>
+            </div>
+            <div>
+              <div style="font-size: 2rem; color: var(--color-indigo); margin-bottom: 0.5rem; font-weight: bold;">02</div>
+              <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Teint terne</h3>
+              <p style="color: var(--color-gray);">La luminosité s'estompe, laissant place à un teint moins uniforme.</p>
+            </div>
+            <div>
+              <div style="font-size: 2rem; color: var(--color-indigo); margin-bottom: 0.5rem; font-weight: bold;">03</div>
+              <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Déshydratation</h3>
+              <p style="color: var(--color-gray);">La barrière cutanée s'affaiblit, la peau devient sèche et inconfortable.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -109,7 +116,7 @@
   <section id="solution" style="padding: 10rem 0; overflow: hidden; position: relative;">
     <div class="container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: center;">
       <div class="solution-image" style="position: relative; border-radius: 30px; overflow: hidden;">
-        <img src="/skin.png" alt="Peau hydratée et lumineuse" style="width: 100%; height: auto; display: block;" />
+        <img src="/skin.webp" alt="Peau hydratée et lumineuse" style="width: 100%; height: auto; display: block;" />
       </div>
       <div class="solution-content">
         <div style="color: var(--color-indigo); font-weight: 600; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 1rem;">Le secret</div>
@@ -120,38 +127,7 @@
         <p class="text-body" style="margin-bottom: 3rem;">
           Notre formule hautement concentrée pénètre en profondeur pour participer au maintien de l'hydratation et favoriser une peau d'apparence visiblement plus jeune et ferme.
         </p>
-        <a href="checkout.html" class="btn btn-primary">Découvrir le sérum <img src="/ghkfoto.png" alt="" style="height: 1.2em; width: auto; object-fit: contain;"></a>
-      </div>
-    </div>
-  </section>
-
-  <!-- 4. Benefits -->
-  <section id="benefits" style="background-color: var(--color-dark); color: var(--color-white); padding: 10rem 0;">
-    <div class="container">
-      <h2 class="title-lg" style="text-align: center; margin-bottom: 6rem; color: var(--color-white);">Une transformation visible.</h2>
-      
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; margin-bottom: 6rem;">
-        <div>
-          <h3 style="font-size: 2rem; margin-bottom: 1rem; color: var(--color-indigo-light);">Lissage absolu</h3>
-          <p style="font-size: 1.1rem; color: #aaa; max-width: 400px;">Aide à lisser l'apparence des ridules. Votre grain de peau semble affiné, d'une douceur exceptionnelle.</p>
-        </div>
-        <div style="height: 1px; background: rgba(255,255,255,0.2);"></div>
-      </div>
-      
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; margin-bottom: 6rem;">
-        <div style="height: 1px; background: rgba(255,255,255,0.2);"></div>
-        <div>
-          <h3 style="font-size: 2rem; margin-bottom: 1rem; color: var(--color-indigo-light);">Hydratation profonde</h3>
-          <p style="font-size: 1.1rem; color: #aaa; max-width: 400px;">Gorge votre peau d'hydratation. Elle retrouve son rebond et sa fraîcheur naturelle instantanément.</p>
-        </div>
-      </div>
-      
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
-        <div>
-          <h3 style="font-size: 2rem; margin-bottom: 1rem; color: var(--color-indigo-light);">Éclat originel</h3>
-          <p style="font-size: 1.1rem; color: #aaa; max-width: 400px;">Ravive la luminosité de votre teint. Contribue à une peau visiblement plus lumineuse et unifiée.</p>
-        </div>
-        <div style="height: 1px; background: rgba(255,255,255,0.2);"></div>
+        <a href="checkout.html" class="btn btn-primary">Découvrir le sérum <img src="/ghkfoto.webp" alt="" style="height: 1.2em; width: auto; object-fit: contain;"></a>
       </div>
     </div>
   </section>
@@ -211,7 +187,7 @@
       <p class="text-body" style="margin: 0 auto 3rem auto; font-size: 1.25rem;">
         Rejoignez les femmes qui ont fait le choix de l'excellence scientifique pour leur peau. Sécurisez votre sérum GHK-Cu dès aujourd'hui.
       </p>
-      <a href="checkout.html" class="btn btn-primary" style="font-size: 1.2rem; padding: 1.5rem 4rem;">Commander maintenant <img src="/ghkfoto.png" alt="" style="height: 1.2em; width: auto; object-fit: contain;"></a>
+      <a href="checkout.html" class="btn btn-primary">Commander maintenant <img src="/ghkfoto.webp" alt="" style="height: 1.2em; width: auto; object-fit: contain;"></a>
       <div style="margin-top: 2rem; display: flex; justify-content: center; gap: 2rem; color: var(--color-gray); font-size: 0.9rem;">
         <span>✓ Paiement 100% Sécurisé</span>
         <span>✓ Livraison Express</span>
