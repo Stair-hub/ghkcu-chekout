@@ -8,7 +8,6 @@ export default defineConfig({
       input: {
         main: 'index.html',
         checkout: 'checkout.html',
-        cerd: 'cerd.html'
       }
     }
   }
