@@ -42,8 +42,8 @@
       <div class="hero-image-wrapper" style="position: relative; height: 80vh; display: flex; justify-content: center; align-items: center; perspective: 1000px;">
         <!-- Glowing Halo -->
         <div class="halo" style="position: absolute; width: 400px; height: 400px; background: radial-gradient(circle, rgba(67, 56, 202, 0.4) 0%, rgba(255,255,255,0) 70%); border-radius: 50%; z-index: 0; filter: blur(40px);"></div>
-        <!-- Product Image -->
-        <img src="/ghkfoto.png" alt="Sérum GHK-Cu" id="hero-bottle" style="height: 45vh; max-height: 350px; width: auto; object-fit: contain; z-index: 1; filter: drop-shadow(0 30px 40px rgba(0,0,0,0.15));" />
+        <!-- React Carousel Root -->
+        <div id="react-carousel-root" style="width: 100%; max-width: 380px; aspect-ratio: 9/16; position: relative; z-index: 2;"></div>
       </div>
     </div>
   </section>
@@ -204,5 +204,6 @@
   </footer>
 
   <script type="module" src="/src/main.ts"></script>
+  <script type="module" src="/src/react-main.tsx"></script>
 </body>
 </html>

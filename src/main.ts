@@ -59,25 +59,15 @@ const initAnimations = () => {
     delay: 0.5
   });
 
-  // Hero Bottle Floating
-  gsap.to('#hero-bottle', {
-    y: -20,
-    duration: 3,
-    repeat: -1,
-    yoyo: true,
-    ease: 'sine.inOut'
-  });
-  
-  // Hero Bottle Parallax
-  gsap.to('#hero-bottle', {
+  // Hero Carousel Parallax (Optional, keeping similar effect for the new element)
+  gsap.to('#react-carousel-root', {
     scrollTrigger: {
       trigger: '#hero',
       start: 'top top',
       end: 'bottom top',
       scrub: 1
     },
-    y: 100,
-    scale: 1.1,
+    y: 50,
     ease: 'none'
   });
 
