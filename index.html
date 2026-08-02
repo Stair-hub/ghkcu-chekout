@@ -27,6 +27,12 @@
       50% { transform: translateY(-10px); }
     }
     .bottle-float-anim { animation: bottle-float 3s ease-in-out infinite; }
+    
+    @keyframes arrow-bounce {
+      0%, 100% { transform: translateX(0); }
+      50% { transform: translateX(5px); }
+    }
+    .arrow-anim { animation: arrow-bounce 1s ease-in-out infinite; display: inline-block; }
   </style>
 </head>
 <body>
@@ -86,9 +92,9 @@
       <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start;">
         <div style="display: flex; flex-direction: column; gap: 2rem; align-items: center;">
           <img src="/rides.webp" alt="Problèmes de peau" style="width: 100%; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.3);" />
-          <a href="checkout.html" style="display: flex; flex-direction: column; align-items: center; gap: 0.75rem; text-decoration: none; color: var(--color-silver); font-weight: 500; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
-            <img src="/ghkfoto.webp" alt="Sérum GHK-Cu" style="height: 100px; width: auto; object-fit: contain; filter: drop-shadow(0 10px 20px rgba(67,56,202,0.3));" />
-            <span style="font-family: var(--font-serif); font-size: 1.1rem; font-style: italic; text-align: center;">Passez le cap pour un nouveau départ...</span>
+          <a href="checkout.html" style="display: flex; align-items: center; gap: 0.5rem; text-decoration: none; color: var(--color-indigo-light); font-weight: 500; font-size: 1.2rem; transition: color 0.3s ease;" onmouseover="this.style.color='var(--color-silver)'" onmouseout="this.style.color='var(--color-indigo-light)'">
+            <span style="font-family: var(--font-serif); font-style: italic;">Cliquez ici</span>
+            <span class="arrow-anim" style="font-size: 1.5rem;">→</span>
           </a>
         </div>
         <div>
